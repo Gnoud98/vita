@@ -1,0 +1,65 @@
+@import "_reset";
+@import "_main";
+@import "_fonts";
+
+html {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+@media only screen and (max-width: 1200px) {
+    html {
+        font-size: 52%;
+    }
+}
+:root {
+   --primary-color:#fe82c0;
+   --text-color:#454955;
+   --pink-light:#fff2f9;
+   --pink-heavy:#fe82c0;
+}
+@media (min-width: 992px) {
+    .gutter-20 {
+        margin-left: -20px;
+        margin-right: -20px;
+    }
+    .gutter-20 > [class*="col-"] {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+.gutter-15 {
+    margin-left: -15px;
+    margin-right: -15px;
+    @media (max-width: 991px) {
+        margin-left: -10px;
+        margin-right: -10px;
+    }
+}
+.gutter-15 > [class*="col-"] {
+    padding-left: 15px;
+    padding-right: 15px;
+    @media (max-width: 991px) {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+body {
+    font-family: "";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+}
+body.hidden {
+    overflow: hidden;
+}
+.container {
+    padding: 0 15px;
+    @media (min-width: 1200px) {
+        max-width: 1200px;
+        width: 100%;
+    }
+}
+/*--------------HEADER----------------*/
