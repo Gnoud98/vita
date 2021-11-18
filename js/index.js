@@ -15,13 +15,17 @@ function menuMobile() {
     $(".overlay").length
   ) {
     $(".bar__mb").click(function () {
+       $(this).toggleClass("active");
       $(".overlay").addClass("overlay-active");
       $(".menu-mobile").addClass("menu-mobile-active");
+      $("body").addClass("hidden")
     });
     $(".overlay").click(function () {
       $(".overlay").removeClass("overlay-active");
       $(".menu-mobile").removeClass("menu-mobile-active");
-      $(".box-search_header").removeClass("active");
+       $("body").removeClass("hidden")
+        $(".bar__mb").removeClass("active")
+
     });
     $(".menu-mobile-close").click(function () {
       $(".overlay").removeClass("overlay-active");
