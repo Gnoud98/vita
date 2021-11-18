@@ -16,7 +16,6 @@ html {
    --primary-color:#fe82c0;
    --text-color:#454955;
    --pink-light:#fff2f9;
-   --pink-heavy:#fe82c0;
 }
 @media (min-width: 992px) {
     .gutter-20 {
@@ -47,7 +46,7 @@ html {
 }
 
 body {
-    font-family: "";
+    font-family: "WorkSans";
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
@@ -58,8 +57,85 @@ body.hidden {
 .container {
     padding: 0 15px;
     @media (min-width: 1200px) {
-        max-width: 1200px;
+        max-width: 1170px;
         width: 100%;
     }
 }
 /*--------------HEADER----------------*/
+.header__wrapper{
+    padding: 1rem 0;
+    .header__logo{
+        max-width: 13.7rem;
+    }
+    .header__right{
+        display:flex;
+        align-items:center;
+        &-nav{
+            ul{
+                display:flex;
+                justify-content:center;
+                align-items:center;
+                gap: 0 3rem;
+                li{
+                    font-size: 15px;
+                    font-weight: 500;
+                     @extend %smooth-trans;
+                     &:hover{
+                         color: var(--primary-color);
+                     }
+                }
+            }
+        }
+        &-search{
+            margin-left: 7rem;
+            form{
+                padding-left: 2.5rem;
+                border-left: 1px solid var(--text-color);
+                display:flex;
+                justify-content:space-between;
+                input{
+                    border: none;
+                }
+                button{
+                    &:hover{
+                        svg{
+                             
+                            path{
+                                fill: var(--primary-color);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.header__nav-secondary{
+    background: var(--primary-color);
+    height: 6rem;
+    line-height: 6rem;
+    ul{
+        display:flex;
+        align-items:center;
+        li{
+            flex: 1 1 auto;
+            text-align: center;
+            color: #fff;
+             text-transform: uppercase;
+             font-size: 15px;
+             font-weight: 700;
+             border-left: 1px solid #fff;
+              @extend %smooth-trans;
+             &:last-child{
+                 border-right: 1px solid #fff;
+             }
+             a{
+                 display: block;
+             }
+             &:hover{
+                 color: var(--primary-color);
+                 background: #f5f5f5;
+             }
+        }
+    }
+}
