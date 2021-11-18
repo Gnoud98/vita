@@ -710,9 +710,9 @@ html {
   }
 }
 :root {
-  --primary-color:#fe82c0;
-  --text-color:#454955;
-  --pink-light:#fff2f9;
+  --primary-color: #fe82c0;
+  --text-color: #454955;
+  --pink-light: #fff2f9;
 }
 
 @media (min-width: 992px) {
