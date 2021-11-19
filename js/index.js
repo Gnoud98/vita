@@ -3,7 +3,9 @@
     $(document).ready(function () {
       menuMobile();
       backToTop();
-    
+      if ($(window).width() < 992) {
+        $(".menu-mobile").css("display", "block");
+      }
     });
   };
 })(jQuery);
@@ -15,17 +17,16 @@ function menuMobile() {
     $(".overlay").length
   ) {
     $(".bar__mb").click(function () {
-       $(this).toggleClass("active");
+      $(this).toggleClass("active");
       $(".overlay").addClass("overlay-active");
       $(".menu-mobile").addClass("menu-mobile-active");
-      $("body").addClass("hidden")
+      $("body").addClass("hidden");
     });
     $(".overlay").click(function () {
       $(".overlay").removeClass("overlay-active");
       $(".menu-mobile").removeClass("menu-mobile-active");
-       $("body").removeClass("hidden")
-        $(".bar__mb").removeClass("active")
-
+      $("body").removeClass("hidden");
+      $(".bar__mb").removeClass("active");
     });
     $(".menu-mobile-close").click(function () {
       $(".overlay").removeClass("overlay-active");

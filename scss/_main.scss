@@ -148,6 +148,7 @@
 
 //menu mb
 .menu-mobile {
+  display: none;
   position: fixed;
   top: 0;
   left: 0;
@@ -159,6 +160,7 @@
   transform: translateX(-100%);
   transition: 0.5s;
   padding-bottom: 50px;
+
   ul {
 
     list-style: none;
