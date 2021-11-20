@@ -99,6 +99,7 @@ function activitySlider() {
     pageDots: false,
     wrapAround: true,
     contain: true,
+    cellAlign:"left",
   });
   $(".button-group").on("click", ".button", function () {
     $(".button-group .button").removeClass("is-selected");
@@ -107,3 +108,11 @@ function activitySlider() {
     $carousel.flickity("select", index);
   });
 }
+
+function duplicateSlides(cellSelector) {
+  var $slides = $(cellSelector).clone();
+  $slides.addClass("show-if-flickity-enabled");
+  $(cellSelector).last().after($slides);
+}
+
+duplicateSlides(".corn-food .carousel-cell");
