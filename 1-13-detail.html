@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./fe-library/animate.min.css">
     <link rel="stylesheet" href="./fe-library/bootstrap.min.css">
     <link rel="stylesheet" href="./fe-library/flickity.min.css">
+    <link rel="stylesheet" href="./fe-library/jquery.fancybox.min.css">
     <link rel="stylesheet" href="./scss/style.css">
     <title>Trang chủ</title>
 </head>
@@ -155,12 +156,12 @@
         <div class="header__nav-secondary">
             <div class="container">
                 <ul>
-                    <li >
+                    <li>
                         <a href="">
                             Cán bộ y tế
                         </a>
                     </li>
-                    <li class="active">
+                    <li>
                         <a href="">
                             Bệnh nhân
                         </a>
@@ -170,7 +171,7 @@
                             Người mang gen
                         </a>
                     </li>
-                    <li>
+                    <li class="active">
                         <a href="">
                             Cộng đồng
                         </a>
@@ -247,86 +248,262 @@
 
     </header>
 
-    <main class="content-patient bg-pos pd-10-14" style="background-image:url(./images/bg-3.png),linear-gradient(to right, #ffe3e5, #ffe3e5);">
+    <main class="content__desc-gen pd-100 ">
         <div class="container">
-            <div class="text-block-page">
-                <div class="box-title">
-                    <p class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s">
-                        Dành cho
-                    </p>
-                    <h1 class="title wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s">
-                       Bệnh nhân
-                    </h1>
-                </div>
-                <div class="desc wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.4s">
-                    Bao gồm gần 500 trang, bộ mặt thật của bệnh thalassemia sẽ được hé lộ cho người
-                    đọc, thể hiện gánh nặng bệnh tật to lớn đang đè lên vai hàng nghìn bệnh nhân
-                    thalassemia và gia đình họ trong cuộc đấu tranh ...
-                </div>
-                <div class="list-link-box red-arr wow fadeInUp" data-wow-duration="1s"
-                    data-wow-delay="0.5s">
-                    <ul>
-                        <li>
-                            <a href="">
-                                Bệnh nhân Alpha thalassemia
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                Phẫu thuật cắt lách
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                Bệnh nhân Beta thalassemia
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                Sinh máu ngoài tuỷ
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                               Thiếu máu chưa rõ nguyên nhân
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                               Suy chức năng khác
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                Biến chứng thường gặp
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                Thuốc uống
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                              Chế độ dinh dưỡng
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                               Vaccin
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                Chế độ vận động
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                               Diễn đàn trao đổi
-                            </a>
-                        </li>
-                    </ul>
+            <div class="box__title-big">
+                <p class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s">
+                    Hoạt động
+                </p>
+                <h1 class="title wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s"
+                    style="--i:#454856">
+                    Từ thiện
+                </h1>
+            </div>
+            <div class="list__question">
+                <h2 class="fs-30">
+                    Câu hỏi thường gặp
+                </h2>
+                <div class="list__question-block">
+                    <div class="question-item  wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s">
+                        <div class="question-title">
+                            <h3 class="title">
+                                Quy trình khám sàng lọc như thế nào?
+                            </h3>
+                            <div class="icon">
+                                <p class="line"></p>
+                            </div>
+                        </div>
+                        <div class="question-desc">
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio,
+                                odio? Dolor sequi illum quidem illo explicabo quasi! Sapiente velit
+                                sit eum optio non, consequuntur magni ad ullam facilis,
+                                exercitationem dignissimos.
+                            </p>
+                            <p>
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis
+                                ea porro, veniam laboriosam accusamus quod harum dicta minima
+                                numquam excepturi quae tempora id! Consequuntur blanditiis ab
+                                repellat nihil iusto sequi.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="question-item  wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s">
+                        <div class="question-title">
+                            <h3 class="title">
+                                Quy trình khám sàng lọc như thế nào?
+                            </h3>
+                            <div class="icon">
+                                <p class="line"></p>
+                            </div>
+                        </div>
+                        <div class="question-desc">
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio,
+                                odio? Dolor sequi illum quidem illo explicabo quasi! Sapiente velit
+                                sit eum optio non, consequuntur magni ad ullam facilis,
+                                exercitationem dignissimos.
+                            </p>
+                            <p>
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis
+                                ea porro, veniam laboriosam accusamus quod harum dicta minima
+                                numquam excepturi quae tempora id! Consequuntur blanditiis ab
+                                repellat nihil iusto sequi.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="question-item  wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.4s">
+                        <div class="question-title">
+                            <h3 class="title">
+                                Quy trình khám sàng lọc như thế nào?
+                            </h3>
+                            <div class="icon">
+                                <p class="line"></p>
+                            </div>
+                        </div>
+                        <div class="question-desc">
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio,
+                                odio? Dolor sequi illum quidem illo explicabo quasi! Sapiente velit
+                                sit eum optio non, consequuntur magni ad ullam facilis,
+                                exercitationem dignissimos.
+                            </p>
+                            <p>
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis
+                                ea porro, veniam laboriosam accusamus quod harum dicta minima
+                                numquam excepturi quae tempora id! Consequuntur blanditiis ab
+                                repellat nihil iusto sequi.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="question-item  wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s">
+                        <div class="question-title">
+                            <h3 class="title">
+                                Quy trình khám sàng lọc như thế nào?
+                            </h3>
+                            <div class="icon">
+                                <p class="line"></p>
+                            </div>
+                        </div>
+                        <div class="question-desc">
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio,
+                                odio? Dolor sequi illum quidem illo explicabo quasi! Sapiente velit
+                                sit eum optio non, consequuntur magni ad ullam facilis,
+                                exercitationem dignissimos.
+                            </p>
+                            <p>
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis
+                                ea porro, veniam laboriosam accusamus quod harum dicta minima
+                                numquam excepturi quae tempora id! Consequuntur blanditiis ab
+                                repellat nihil iusto sequi.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="question-item  wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s">
+                        <div class="question-title">
+                            <h3 class="title">
+                                Quy trình khám sàng lọc như thế nào?
+                            </h3>
+                            <div class="icon">
+                                <p class="line"></p>
+                            </div>
+                        </div>
+                        <div class="question-desc">
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio,
+                                odio? Dolor sequi illum quidem illo explicabo quasi! Sapiente velit
+                                sit eum optio non, consequuntur magni ad ullam facilis,
+                                exercitationem dignissimos.
+                            </p>
+                            <p>
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis
+                                ea porro, veniam laboriosam accusamus quod harum dicta minima
+                                numquam excepturi quae tempora id! Consequuntur blanditiis ab
+                                repellat nihil iusto sequi.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="question-item  wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.7s">
+                        <div class="question-title">
+                            <h3 class="title">
+                                Quy trình khám sàng lọc như thế nào?
+                            </h3>
+                            <div class="icon">
+                                <p class="line"></p>
+                            </div>
+                        </div>
+                        <div class="question-desc">
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio,
+                                odio? Dolor sequi illum quidem illo explicabo quasi! Sapiente velit
+                                sit eum optio non, consequuntur magni ad ullam facilis,
+                                exercitationem dignissimos.
+                            </p>
+                            <p>
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis
+                                ea porro, veniam laboriosam accusamus quod harum dicta minima
+                                numquam excepturi quae tempora id! Consequuntur blanditiis ab
+                                repellat nihil iusto sequi.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="question-item  wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.8s">
+                        <div class="question-title">
+                            <h3 class="title">
+                                Quy trình khám sàng lọc như thế nào?
+                            </h3>
+                            <div class="icon">
+                                <p class="line"></p>
+                            </div>
+                        </div>
+                        <div class="question-desc">
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio,
+                                odio? Dolor sequi illum quidem illo explicabo quasi! Sapiente velit
+                                sit eum optio non, consequuntur magni ad ullam facilis,
+                                exercitationem dignissimos.
+                            </p>
+                            <p>
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis
+                                ea porro, veniam laboriosam accusamus quod harum dicta minima
+                                numquam excepturi quae tempora id! Consequuntur blanditiis ab
+                                repellat nihil iusto sequi.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="question-item  wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.9s">
+                        <div class="question-title">
+                            <h3 class="title">
+                                Quy trình khám sàng lọc như thế nào?
+                            </h3>
+                            <div class="icon">
+                                <p class="line"></p>
+                            </div>
+                        </div>
+                        <div class="question-desc">
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio,
+                                odio? Dolor sequi illum quidem illo explicabo quasi! Sapiente velit
+                                sit eum optio non, consequuntur magni ad ullam facilis,
+                                exercitationem dignissimos.
+                            </p>
+                            <p>
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis
+                                ea porro, veniam laboriosam accusamus quod harum dicta minima
+                                numquam excepturi quae tempora id! Consequuntur blanditiis ab
+                                repellat nihil iusto sequi.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="question-item  wow fadeInUp" data-wow-duration="1s" data-wow-delay="1s">
+                        <div class="question-title">
+                            <h3 class="title">
+                                Quy trình khám sàng lọc như thế nào?
+                            </h3>
+                            <div class="icon">
+                                <p class="line"></p>
+                            </div>
+                        </div>
+                        <div class="question-desc">
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio,
+                                odio? Dolor sequi illum quidem illo explicabo quasi! Sapiente velit
+                                sit eum optio non, consequuntur magni ad ullam facilis,
+                                exercitationem dignissimos.
+                            </p>
+                            <p>
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis
+                                ea porro, veniam laboriosam accusamus quod harum dicta minima
+                                numquam excepturi quae tempora id! Consequuntur blanditiis ab
+                                repellat nihil iusto sequi.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="question-item  wow fadeInUp" data-wow-duration="1s" data-wow-delay="1.1s">
+                        <div class="question-title">
+                            <h3 class="title">
+                                Quy trình khám sàng lọc như thế nào?
+                            </h3>
+                            <div class="icon">
+                                <p class="line"></p>
+                            </div>
+                        </div>
+                        <div class="question-desc">
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio,
+                                odio? Dolor sequi illum quidem illo explicabo quasi! Sapiente velit
+                                sit eum optio non, consequuntur magni ad ullam facilis,
+                                exercitationem dignissimos.
+                            </p>
+                            <p>
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis
+                                ea porro, veniam laboriosam accusamus quod harum dicta minima
+                                numquam excepturi quae tempora id! Consequuntur blanditiis ab
+                                repellat nihil iusto sequi.
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -553,6 +730,7 @@
     <script src="./fe-library/flickity.pkgd.min.js"></script>
     <script src="./fe-library/bootstrap.min.js"></script>
     <script src="./fe-library/wow.min.js"></script>
+    <script src="./fe-library/jquery.fancybox.min.js"></script>
     <script src="./js/index.js"></script>
 </body>
 

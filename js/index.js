@@ -5,6 +5,8 @@
       backToTop();
       activityHover();
       activitySlider();
+      duplicateSlides();
+      showQuestion();
       if ($(window).width() < 992) {
         $(".menu-mobile").css("display", "block");
       }
@@ -99,7 +101,7 @@ function activitySlider() {
     pageDots: false,
     wrapAround: true,
     contain: true,
-    cellAlign:"left",
+    cellAlign: "left",
   });
   $(".button-group").on("click", ".button", function () {
     $(".button-group .button").removeClass("is-selected");
@@ -115,4 +117,13 @@ function duplicateSlides(cellSelector) {
   $(cellSelector).last().after($slides);
 }
 
-duplicateSlides(".corn-food .carousel-cell");
+duplicateSlides(".home__activity .activity-item");
+
+function showQuestion() {
+  $(".question-title").click(function () {
+    $(this).toggleClass("rotate");
+    $(this).siblings(".question-desc").slideToggle();
+  });
+
+  $(".question-item:first-child .question-title").addClass("rotate")
+}

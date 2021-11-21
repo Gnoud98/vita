@@ -17,42 +17,6 @@
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.truncate-3 {
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 3;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-.truncate-4 {
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 4;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.truncate-5 {
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 5;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-.truncate-6 {
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 6;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-.truncate-7 {
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 7;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
 
 .ws-sgct blockquote {
   padding: 10px 20px;
@@ -66,23 +30,17 @@
   background: rgba(0, 0, 0, 0.05);
   border-radius: 3px;
 }
+
 .ws-sgct {
-  font-size: 18px;
-}
-.ws-sgct {
-  font-size: 18px;
-  line-height: 1.6;
+  font-size: 16px;
+  line-height: 1.5;
 }
 .ws-sgct p {
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }
-@media (max-width: 767px) {
-  .ws-sgct {
-    font-size: 16px;
-  }
-}
+
 .ws-sgct img {
-  margin-bottom: 1.5rem;
+ margin: 20px auto 20px auto;
 }
 .ws-sgct table {
   margin: 0 0 15px;
@@ -329,7 +287,11 @@
   overflow: hidden;
   width: 100%;
   img {
-    transition: 2s;
+    -webkit-transition: all 0.4s ease-out 0s;
+    -moz-transition: all 0.4s ease-out 0s;
+    -ms-transition: all 0.4s ease-out 0s;
+    -o-transition: all 0.4s ease-out 0s;
+    transition: all 0.4s ease-out 0s;
   }
   &:hover > img {
     transform: scale(1.09);
