@@ -10,9 +10,10 @@
     <link rel="stylesheet" href="./fe-library/flickity.min.css">
     <link rel="stylesheet" href="./fe-library/jquery.fancybox.min.css">
     <link rel="stylesheet" href="./scss/style.css">
-    <title>Blog</title>
+    <title> Chi tiết Bác sĩ</title>
 </head>
-=
+
+
 <body>
     <header>
         <div class="header__slider"
@@ -122,7 +123,8 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="">
+                                <a href="" data-bs-toggle="modal"
+                                data-bs-target="#form-bs2">
                                     Đặt lịch khám
                                 </a>
                             </li>
@@ -248,343 +250,428 @@
 
     </header>
 
-    <main class="blog-page">
-        <section class="heading-page" style="background-image: url(./images/banner1.png);">
+    <main class="doctor-detail-page">
+        <section class="heading-page" style="background-image: url(./images/banner4.png);">
             <div class="container">
-                <h1 class="page-title wow fadeInUp"data-wow-duration="1s" data-wow-delay="0.2s">
-                    Tin Tức và sự kiện
+                <h1 class="page-title wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s">
+                    Bác sĩ
                 </h1>
                 <nav aria-label="breadcrumb">
-                    <ol class="breadcrumb wow fadeInUp"data-wow-duration="1s" data-wow-delay="0.3s">
+                    <ol class="breadcrumb wow fadeInUp" data-wow-duration="1s"
+                        data-wow-delay="0.3s">
                         <li class="breadcrumb-item"><a href="#">Trang chủ</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Tin tức và sự kiện
+                        <li class="breadcrumb-item active" aria-current="page">Bác sĩ
                         </li>
                     </ol>
                 </nav>
             </div>
         </section>
-        <section class="list-blog">
+        <section class="doctor-detail-content pd-40">
             <div class="container">
-                <div class="row gx-lg-5 gx-4 gy-5">
-                    <div class="col-md-4">
-                        <div class="news-item wow fadeInUp" data-wow-duration="1s"
-                            data-wow-delay="0.2s">
-                            <div class="news-img">
-                                <a href="" class="c-img scale-hover">
-                                    <img src="./images/news-1.png" alt="">
-                                </a>
-                            </div>
-                            <div class="news-desc">
-                                <p class="date">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                        fill="#fe82c0" class="bi bi-calendar" viewBox="0 0 16 16">
-                                        <path
-                                            d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z" />
-                                    </svg>
-                                    <span>
-                                        Jun 03, 2021
-                                    </span>
-                                </p>
-                                <h3 class="news-title">
-                                    <a href="">
-                                        Đánh giá Thalassemia Toàn cầu 2021 (GTR)
-                                    </a>
-                                </h3>
-                                <div class="desc">
-                                    Sức tàn phá của bệnh tan máu
-                                    bẩm sinh (Thalassemia)
-                                </div>
+                <div class="doctor-info">
+                    <div class="row align-items-center">
+                        <div class="col-md-4">
+                            <div class="doctor-avatar c-img">
+                                <img src="./images/bs3.png" alt="">
                             </div>
                         </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="news-item wow fadeInUp" data-wow-duration="1s"
-                            data-wow-delay="0.3s">
-                            <div class="news-img">
-                                <a href="" class="c-img scale-hover">
-                                    <img src="./images/news-2.png" alt="">
-                                </a>
-                            </div>
-                            <div class="news-desc">
-                                <p class="date">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                        fill="#fe82c0" class="bi bi-calendar" viewBox="0 0 16 16">
-                                        <path
-                                            d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z" />
-                                    </svg>
-                                    <span>
-                                        Jun 03, 2021
-                                    </span>
-                                </p>
-                                <h3 class="news-title">
-                                    <a href="">
-                                        Tư vấn trực tiếp về bệnh tan máu
-                                        bẩm sinh
-                                    </a>
-                                </h3>
-                                <div class="desc">
-                                    Sức tàn phá của bệnh tan máu
-                                    bẩm sinh (Thalassemia)
+                        <div class="col-md-8">
+                            <div class="doctor-desc">
+                                <h1 class="doctor-name">
+                                    BS. Trần quỳnh mai
+                                </h1>
+                                <div class="pos">
+                                    Trưởng khoa - Bác sĩ
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="news-item wow fadeInUp" data-wow-duration="1s"
-                            data-wow-delay="0.4s">
-                            <div class="news-img">
-                                <a href="" class="c-img scale-hover">
-                                    <img src="./images/news-3.png" alt="">
-                                </a>
-                            </div>
-                            <div class="news-desc">
-                                <p class="date">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                        fill="#fe82c0" class="bi bi-calendar" viewBox="0 0 16 16">
-                                        <path
-                                            d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z" />
-                                    </svg>
-                                    <span>
-                                        Jun 03, 2021
-                                    </span>
-                                </p>
-                                <h3 class="news-title">
-                                    <a href="">
-                                        Khuyến nghị với các gia đình, bệnh
-                                        nhân và người nhà bệnh nhân
-                                    </a>
-                                </h3>
                                 <div class="desc">
-                                    Sức tàn phá của bệnh tan máu
-                                    bẩm sinh (Thalassemia)
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                        Esse, nam? Eum nemo soluta esse cupiditate molestias
+                                        corporis accusantium expedita dolores! Dolorem, distinctio
+                                        quae sit praesentium ab illo perferendis totam sequi!
+                                    </p>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                        Dolorum praesentium adipisci libero rerum esse nesciunt,
+                                        fugiat ut quisquam corporis architecto magni alias neque a
+                                        laudantium debitis dignissimos recusandae. Doloremque,
+                                        consequatur!
+                                    </p>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="news-item wow fadeInUp" data-wow-duration="1s"
-                            data-wow-delay="0.2s">
-                            <div class="news-img">
-                                <a href="" class="c-img scale-hover">
-                                    <img src="./images/news-1.png" alt="">
-                                </a>
-                            </div>
-                            <div class="news-desc">
-                                <p class="date">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                        fill="#fe82c0" class="bi bi-calendar" viewBox="0 0 16 16">
-                                        <path
-                                            d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z" />
-                                    </svg>
-                                    <span>
-                                        Jun 03, 2021
-                                    </span>
-                                </p>
-                                <h3 class="news-title">
-                                    <a href="">
-                                        Đánh giá Thalassemia Toàn cầu 2021 (GTR)
-                                    </a>
-                                </h3>
-                                <div class="desc">
-                                    Sức tàn phá của bệnh tan máu
-                                    bẩm sinh (Thalassemia)
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="news-item wow fadeInUp" data-wow-duration="1s"
-                            data-wow-delay="0.3s">
-                            <div class="news-img">
-                                <a href="" class="c-img scale-hover">
-                                    <img src="./images/news-2.png" alt="">
-                                </a>
-                            </div>
-                            <div class="news-desc">
-                                <p class="date">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                        fill="#fe82c0" class="bi bi-calendar" viewBox="0 0 16 16">
-                                        <path
-                                            d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z" />
-                                    </svg>
-                                    <span>
-                                        Jun 03, 2021
-                                    </span>
-                                </p>
-                                <h3 class="news-title">
-                                    <a href="">
-                                        Tư vấn trực tiếp về bệnh tan máu
-                                        bẩm sinh
-                                    </a>
-                                </h3>
-                                <div class="desc">
-                                    Sức tàn phá của bệnh tan máu
-                                    bẩm sinh (Thalassemia)
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="news-item wow fadeInUp" data-wow-duration="1s"
-                            data-wow-delay="0.4s">
-                            <div class="news-img">
-                                <a href="" class="c-img scale-hover">
-                                    <img src="./images/news-3.png" alt="">
-                                </a>
-                            </div>
-                            <div class="news-desc">
-                                <p class="date">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                        fill="#fe82c0" class="bi bi-calendar" viewBox="0 0 16 16">
-                                        <path
-                                            d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z" />
-                                    </svg>
-                                    <span>
-                                        Jun 03, 2021
-                                    </span>
-                                </p>
-                                <h3 class="news-title">
-                                    <a href="">
-                                        Khuyến nghị với các gia đình, bệnh
-                                        nhân và người nhà bệnh nhân
-                                    </a>
-                                </h3>
-                                <div class="desc">
-                                    Sức tàn phá của bệnh tan máu
-                                    bẩm sinh (Thalassemia)
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="news-item wow fadeInUp" data-wow-duration="1s"
-                            data-wow-delay="0.2s">
-                            <div class="news-img">
-                                <a href="" class="c-img scale-hover">
-                                    <img src="./images/news-1.png" alt="">
-                                </a>
-                            </div>
-                            <div class="news-desc">
-                                <p class="date">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                        fill="#fe82c0" class="bi bi-calendar" viewBox="0 0 16 16">
-                                        <path
-                                            d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z" />
-                                    </svg>
-                                    <span>
-                                        Jun 03, 2021
-                                    </span>
-                                </p>
-                                <h3 class="news-title">
-                                    <a href="">
-                                        Đánh giá Thalassemia Toàn cầu 2021 (GTR)
-                                    </a>
-                                </h3>
-                                <div class="desc">
-                                    Sức tàn phá của bệnh tan máu
-                                    bẩm sinh (Thalassemia)
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="news-item wow fadeInUp" data-wow-duration="1s"
-                            data-wow-delay="0.3s">
-                            <div class="news-img">
-                                <a href="" class="c-img scale-hover">
-                                    <img src="./images/news-2.png" alt="">
-                                </a>
-                            </div>
-                            <div class="news-desc">
-                                <p class="date">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                        fill="#fe82c0" class="bi bi-calendar" viewBox="0 0 16 16">
-                                        <path
-                                            d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z" />
-                                    </svg>
-                                    <span>
-                                        Jun 03, 2021
-                                    </span>
-                                </p>
-                                <h3 class="news-title">
-                                    <a href="">
-                                        Tư vấn trực tiếp về bệnh tan máu
-                                        bẩm sinh
-                                    </a>
-                                </h3>
-                                <div class="desc">
-                                    Sức tàn phá của bệnh tan máu
-                                    bẩm sinh (Thalassemia)
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="news-item wow fadeInUp" data-wow-duration="1s"
-                            data-wow-delay="0.4s">
-                            <div class="news-img">
-                                <a href="" class="c-img scale-hover">
-                                    <img src="./images/news-3.png" alt="">
-                                </a>
-                            </div>
-                            <div class="news-desc">
-                                <p class="date">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                        fill="#fe82c0" class="bi bi-calendar" viewBox="0 0 16 16">
-                                        <path
-                                            d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z" />
-                                    </svg>
-                                    <span>
-                                        Jun 03, 2021
-                                    </span>
-                                </p>
-                                <h3 class="news-title">
-                                    <a href="">
-                                        Khuyến nghị với các gia đình, bệnh
-                                        nhân và người nhà bệnh nhân
-                                    </a>
-                                </h3>
-                                <div class="desc">
-                                    Sức tàn phá của bệnh tan máu
-                                    bẩm sinh (Thalassemia)
+                                <div class="btn-book">
+                                    <button type="button" data-bs-toggle="modal"
+                                        data-bs-target="#form-bs1">
+                                        Đặt lịch khám
+                                    </button>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <nav aria-label="navigation">
-                    <ul class="pagination">
-                        <li class="page-item">
-                            <a class="page-link" href="#" aria-label="Previous">
-                                <span aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg"
-                                        width="16" height="16" fill="currentColor"
-                                        class="bi bi-chevron-left" viewBox="0 0 16 16">
-                                        <path fill-rule="evenodd"
-                                            d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
-                                    </svg></span>
-                            </a>
-                        </li>
-                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                        <li class="page-item"><a class="page-link" href="#">2</a></li>
-                        <li class="page-item"><a class="page-link" href="#">3</a></li>
-                        <li class="page-item"><a class="page-link" href="#">4</a></li>
-                        <li class="page-item">
-                            <a class="page-link" href="#" aria-label="Next">
-                                <span aria-hidden="true">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                        fill="currentColor" class="bi bi-chevron-right"
-                                        viewBox="0 0 16 16">
-                                        <path fill-rule="evenodd"
-                                            d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
-                                    </svg>
-                                </span>
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
+                <div class="doctor-info-tabs">
+                    <div class="nav" id="nav-tab" role="tablist">
+                        <button class="nav-item active" data-bs-toggle="tab" data-bs-target="#tab1"
+                            type="button" role="tab" aria-selected="true"> Quá trình học
+                            tập</button>
+                        <button class="nav-item" data-bs-toggle="tab" data-bs-target="#tab2"
+                            type="button" role="tab" aria-selected="false">Quá trình công
+                            tác</button>
+                        <button class="nav-item" data-bs-toggle="tab" data-bs-target="#tab3"
+                            type="button" role="tab" aria-selected="false">Lịch khám trong
+                            tuần</button>
+                    </div>
+
+                    <div class="tab-content" id="nav-tabContent">
+                        <div class="tab-pane fade show active" id="tab1" role="tabpanel">
+                            <div class="process-learn">
+                                <ul>
+                                    <li>
+                                        <p class="time">
+                                            2008-2013:
+                                        </p>
+                                        <p class="desc">
+                                            Lorem ipsum dolor, sit amet consectetur adipisicing
+                                            elit. Beatae, ullam, molestias recusandae, laborum
+                                            suscipit eveniet blanditiis facilis deleniti tenetur ex
+                                            inventore vel voluptas maxime delectus qui
+                                            exercitationem? Qui, tempora ex.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p class="time">
+                                            2008-2013:
+                                        </p>
+                                        <p class="desc">
+                                            Lorem ipsum dolor, sit amet consectetur adipisicing
+                                            elit. Beatae, ullam, molestias recusandae, laborum
+                                            suscipit eveniet blanditiis facilis deleniti tenetur ex
+                                            inventore vel voluptas maxime delectus qui
+                                            exercitationem? Qui, tempora ex.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p class="time">
+                                            2008-2013:
+                                        </p>
+                                        <p class="desc">
+                                            Lorem ipsum dolor, sit amet consectetur adipisicing
+                                            elit. Beatae, ullam, molestias recusandae, laborum
+                                            suscipit eveniet blanditiis facilis deleniti tenetur ex
+                                            inventore vel voluptas maxime delectus qui
+                                            exercitationem? Qui, tempora ex.
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane fade" id="tab2" role="tabpanel">
+                            <div class="desc-ct ws-sgct">
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo vel
+                                    soluta est voluptatem exercitationem labore doloribus neque sed
+                                    modi dicta error officia delectus reiciendis quaerat velit, eos
+                                    facere? Quaerat, illum.
+                                </p>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem
+                                    rerum asperiores adipisci est numquam, nemo obcaecati vitae,
+                                    incidunt delectus voluptas non culpa magni eum aliquam provident
+                                    harum enim ullam eaque!
+                                </p>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem
+                                    rerum asperiores adipisci est numquam, nemo obcaecati vitae,
+                                    incidunt delectus voluptas non culpa magni eum aliquam provident
+                                    harum enim ullam eaque!
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="tab3" role="tabpanel">
+                            <div class="working-time">
+                                <div class="week-item">
+                                    <p class="time">
+                                        Tuần 3 tháng 11
+                                    </p>
+                                    <ul>
+                                        <li>
+                                            Thứ 2: 8h30 - 17h30
+                                        </li>
+                                        <li>
+                                            Thứ 3: 8h30 - 17h30
+                                        </li>
+                                        <li>
+                                            Thứ 4: 8h30 - 17h30
+                                        </li>
+                                        <li>
+                                            Thứ 5: 8h30 - 17h30
+                                        </li>
+                                        <li>
+                                            Thứ 6: 8h30 - 17h30
+                                        </li>
+                                        <li>
+                                            Thứ 7: 8h30 - 17h30
+                                        </li>
+                                        <li>
+                                            Chủ nhật: Nghỉ
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="week-item">
+                                    <p class="time">
+                                        Tuần 4 tháng 11
+                                    </p>
+                                    <ul>
+                                        <li>
+                                            Thứ 2: 8h30 - 17h30
+                                        </li>
+                                        <li>
+                                            Thứ 3: 8h30 - 17h30
+                                        </li>
+                                        <li>
+                                            Thứ 4: 8h30 - 17h30
+                                        </li>
+                                        <li>
+                                            Thứ 5: 8h30 - 17h30
+                                        </li>
+                                        <li>
+                                            Thứ 6: 8h30 - 17h30
+                                        </li>
+                                        <li>
+                                            Thứ 7: 8h30 - 17h30
+                                        </li>
+                                        <li>
+                                            Chủ nhật: Nghỉ
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
+
+    <div class="modal fade form-booking" id="form-bs1" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Đặt lịch hẹn khám bác sĩ</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body ">
+                    <h4 class="doctor-name-form">
+                        <p class="pos">
+                            Bác sĩ :
+                        </p>
+                        <p class="name">
+                            Lê Anh Tuấn
+                        </p>
+                    </h4>
+                    <form action="">
+                        <div class="form-group">
+                            <label>
+                                Dịch vụ khám
+                            </label>
+                            <select>
+                                <option value="">
+                                    Dịch vụ 1
+                                </option>
+                                <option value="">
+                                    Dịch vụ 2
+                                </option>
+                                <option value="">
+                                    Dịch vụ 3
+                                </option>
+                            </select>
+                        </div>
+                        <div class="form-group-50">
+                            <div class="form-group">
+                                <label for="">Ngày hẹn khám</label>
+                                <input type="date" name="" id="">
+                            </div>
+                            <div class="form-group">
+                                <label for="">Thời gian</label>
+                                <input type="time" name="" id="">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="">
+                                Họ và tên
+                            </label>
+                            <input type="text" placeholder="Nhập họ tên" required>
+                        </div>
+                        <div class="form-group-50">
+                            <div class="form-group">
+                                <label for="">Năm sinh</label>
+                                <select>
+                                    <option value="">
+                                        1995
+                                    </option>
+                                    <option value="">
+                                        1996
+                                    </option>
+                                    <option value="">
+                                        1997
+                                    </option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="">Giới tính</label>
+                                <select>
+                                    <option value="">
+                                        Nam
+                                    </option>
+                                    <option value="">
+                                        Nữ
+                                    </option>
+
+                                </select>
+                            </div>
+                           
+                        </div>
+                        <div class="form-group">
+                            <label for="">
+                                Điện thoại
+                            </label>
+                            <input type="tel" placeholder="Nhập số điện thoại" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="">
+                                Email
+                            </label>
+                            <input type="tel" placeholder="Nhập Email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="">
+                                Địa chỉ
+                            </label>
+                            <input type="tel" placeholder="Nhập địa chỉ" required>
+                        </div>
+                        <button type="submit">
+                            Đặt lịch khám
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal fade form-booking" id="form-bs2" tabindex="-1" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Đặt lịch hẹn khám bác sĩ</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                    aria-label="Close"></button>
+            </div>
+            <div class="modal-body ">
+                <form action="">
+                    <div class="form-group">
+                        <label>
+                            Dịch vụ khám
+                        </label>
+                        <select>
+                            <option value="">
+                                Dịch vụ 1
+                            </option>
+                            <option value="">
+                                Dịch vụ 2
+                            </option>
+                            <option value="">
+                                Dịch vụ 3
+                            </option>
+                        </select>
+                    </div>
+                    <div class="form-group-50">
+                        <div class="form-group">
+                            <label for="">Ngày hẹn khám</label>
+                            <input type="date" name="" id="">
+                        </div>
+                        <div class="form-group">
+                            <label for="">Thời gian</label>
+                            <input type="time" name="" id="">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="">
+                            Bác sĩ
+                        </label>
+                        <select name="" id="">
+                            <option value="">Chọn bác sĩ</option>
+                            <option value="">Bác sĩ Quỳnh Mai</option>
+                            <option value="">Bác sĩ Anh Tuấn</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="">
+                            Họ và tên
+                        </label>
+                        <input type="text" placeholder="Nhập họ tên" required>
+                    </div>
+                    <div class="form-group-50">
+                        <div class="form-group">
+                            <label for="">Năm sinh</label>
+                            <select>
+                                <option value="">
+                                    1995
+                                </option>
+                                <option value="">
+                                    1996
+                                </option>
+                                <option value="">
+                                    1997
+                                </option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="">Giới tính</label>
+                            <select>
+                                <option value="">
+                                    Nam
+                                </option>
+                                <option value="">
+                                    Nữ
+                                </option>
+
+                            </select>
+                        </div>
+                       
+                    </div>
+                    <div class="form-group">
+                        <label for="">
+                            Điện thoại
+                        </label>
+                        <input type="tel" placeholder="Nhập số điện thoại" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="">
+                            Email
+                        </label>
+                        <input type="tel" placeholder="Nhập Email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="">
+                            Địa chỉ
+                        </label>
+                        <input type="tel" placeholder="Nhập địa chỉ" required>
+                    </div>
+                    <button type="submit">
+                        Đặt lịch khám
+                    </button>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</div>
+
 
 
     <footer>

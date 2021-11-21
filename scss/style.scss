@@ -17,6 +17,7 @@ html {
     --primary-hover: #f160a8;
     --text-color: #454856;
     --pink-light: #fff2f9;
+    --bg-form: #efefef;
 }
 @media (min-width: 992px) {
     .gutter-20 {
@@ -1827,6 +1828,424 @@ main {
             max-width: 100%;
             width: 100%;
             min-height: 33.6rem;
+        }
+    }
+}
+
+/*------------------Bác sỹ--------------------*/
+.filter-block {
+    padding: 2rem 3rem;
+    display: flex;
+    align-items: center;
+    background: var(--bg-form);
+    gap: 0 3rem;
+    margin-bottom: 4.5rem;
+    @media (max-width: 991px) {
+        gap: 0 12.48px;
+    }
+    @media (max-width: 767px) {
+        flex-wrap: wrap;
+    }
+    .form-filter {
+        width: 33rem;
+        max-width: 33.333%;
+        @media (max-width: 1199px) {
+            width: 32rem;
+        }
+        @media (max-width: 991px) {
+            width: 23.5rem;
+        }
+        @media (max-width: 767px) {
+            width: 100%;
+            max-width: 100%;
+            margin-bottom: 2rem;
+        }
+        form {
+            height: 58px;
+            background: #fff;
+            select {
+                cursor: pointer;
+                padding: 0 3rem;
+                border: none;
+                height: 100%;
+                width: 100%;
+                background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' fill='%23454856' class='bi bi-caret-down-fill' viewBox='0 0 16 16'%3E%3Cpath d='M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z'/%3E%3C/svg%3E");
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                background-position: right 1.45em top 50%;
+                background-repeat: no-repeat;
+                border-radius: 0;
+                @media (max-width: 991px) {
+                    padding: 0 2rem;
+                }
+                &:focus {
+                    outline: none;
+                }
+            }
+        }
+    }
+}
+.doctor-content {
+    .form-search {
+        flex: 1;
+        form {
+            padding: 0 3rem;
+            height: 58px;
+            background: #fff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            @media (max-width: 991px) {
+                padding: 0 2rem;
+            }
+
+            input {
+                border: none;
+                flex: 1;
+                height: 100%;
+            }
+            button {
+                flex-shrink: 0;
+            }
+        }
+    }
+}
+
+.doctor-list {
+    .doctor-item {
+        position: relative;
+        .img {
+            .c-img {
+                padding-top: 128%;
+                object-position: center;
+            }
+        }
+        .doctor-desc {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            min-height: 11.7rem;
+            max-height: 100%;
+            background: rgba($color: #fe82c0, $alpha: 0.8);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            color: #fff;
+            .name {
+                font-size: 2.4rem;
+                font-weight: 600;
+                text-align: center;
+                @media (max-width: 767px) {
+                    font-size: 17px;
+                }
+            }
+            .pos {
+                font-size: 16px;
+                font-weight: 500;
+                @media (max-width: 767px) {
+                    font-size: 15px;
+                }
+            }
+            @media (max-width: 991px) {
+                min-height: 10rem;
+            }
+        }
+    }
+    .pagination {
+        justify-content: center;
+    }
+}
+.pd-40 {
+    padding: 4rem 0;
+}
+/*-------------Chi tiết bác sĩ-------------------*/
+.doctor-detail-content {
+    .doctor-info {
+        .doctor-avatar {
+            padding-top: 128%;
+            @media (max-width: 767px) {
+                padding-top: 100%;
+            }
+        }
+        .doctor-desc {
+            padding-left: 12rem;
+            @media (max-width: 991px) {
+                padding-left: 2rem;
+            }
+            @media (max-width: 767px) {
+                padding-left: 0;
+                margin-top: 3rem;
+            }
+            .doctor-name {
+                font-size: 3.6rem;
+                font-weight: 700;
+                text-transform: uppercase;
+                color: #081839;
+                @media (max-width: 991px) {
+                    font-size: 3.2rem;
+                }
+                @media (max-width: 767px) {
+                    text-align: center;
+                }
+            }
+            .pos {
+                color: var(--primary-color);
+                font-size: 2rem;
+                font-weight: 500;
+                margin-top: 3px;
+                @media (max-width: 767px) {
+                    text-align: center;
+                }
+            }
+            .desc {
+                text-align: justify;
+                margin-top: 3rem;
+                font-size: 16px;
+                font-weight: 500;
+                color: #081839;
+                @media (max-width: 991px) {
+                    font-size: 15px;
+                }
+                p:not(:last-child) {
+                    margin-bottom: 2rem;
+                }
+            }
+            .btn-book {
+                margin-top: 3rem;
+                @media (max-width: 767px) {
+                }
+                button {
+                    font-size: 16px;
+                    width: 20.5rem;
+                    height: 4.5rem;
+                    line-height: 4.4rem;
+                    border-radius: 20px;
+                    text-align: center;
+                    display: block;
+                    text-align: center;
+                    color: #fff;
+                    background: var(--primary-color);
+                    @extend %smooth-trans;
+                    @media (max-width: 767px) {
+                        margin: auto;
+                    }
+                    &:hover {
+                        background: var(--primary-hover);
+                    }
+                }
+            }
+        }
+    }
+}
+.doctor-info-tabs {
+    margin-top: 2rem;
+    background: #fafafa;
+    .nav {
+        .nav-item {
+            text-align: center;
+            margin-right: 5px;
+            padding: 1.2rem 3rem;
+            background: #fff;
+            font-weight: 500;
+            border: 1px solid #eee;
+            @extend %smooth-trans;
+            @media (max-width: 767px) {
+                width: 100%;
+                margin-right: 0;
+            }
+            &.active {
+                color: #fff;
+                background: var(--primary-color);
+            }
+        }
+    }
+    .tab-content {
+        padding: 4rem;
+        @media (max-width: 767px) {
+            padding: 4rem 2rem;
+        }
+        .process-learn {
+            ul {
+                li {
+                    margin-bottom: 2rem;
+                    display: flex;
+                    .time {
+                        width: 16rem;
+                        max-width: 30%;
+                        font-size: 16px;
+                        font-weight: 600;
+                        color: #000;
+                    }
+                    .desc {
+                        flex: 1;
+                        color: #000;
+                        font-size: 16px;
+                        text-align: justify;
+                    }
+                }
+            }
+        }
+        .desc-ct {
+            font-size: 16px;
+            @media (max-width: 767px) {
+                font-size: 15px;
+            }
+        }
+        .working-time {
+            .week-item {
+                margin-bottom: 3rem;
+                .time {
+                    font-size: 16px;
+                    font-weight: 500;
+                    margin-bottom: 2rem;
+                    color: #000;
+                }
+                ul {
+                    display: flex;
+                    align-items: center;
+                    flex-wrap: wrap;
+                    gap: 1rem;
+                    li {
+                        flex-basis: 24%;
+                        border-radius: 30px;
+                        text-align: center;
+                        color: #fff;
+                        padding: 1.5rem 0;
+                        background: var(--primary-color);
+                        @media (max-width: 991px) {
+                            flex-basis: 32%;
+                        }
+                        @media (max-width: 767px) {
+                            flex-basis: 48%;
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*------------form modal-------------------*/
+
+.form-booking {
+    .modal-header {
+        display: block;
+        border-bottom: none;
+        padding: 0;
+        .btn-close {
+            position: absolute;
+            top: 2.8rem;
+            right: 3.2rem;
+            padding: 0;
+            margin: 0;
+            @media(max-width:767px){
+            top: 5px;
+            right: 5px;
+            }
+        }
+    }
+    .modal-title {
+        font-size: 3rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-align: center;
+        padding: 1.5rem 0;
+        background: var(--primary-color);
+        color: #fff;
+    }
+    .modal-content {
+        border-radius: 10px;
+        border: none;
+        background: var(--bg-form);
+        .modal-body {
+            padding: 4rem 15rem;
+            @media(max-width:991px){
+            padding: 4rem;
+            }
+            .doctor-name-form {
+                display: flex;
+                margin-bottom: 2rem;
+                .pos {
+                    width: 16rem;
+                    font-weight: 500;
+                }
+                .name {
+                    flex: 1;
+                    font-weight: 700;
+                    color: #000;
+                }
+            }
+            form {
+                .form-group {
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 1.5rem;
+
+                    label {
+                        width: 16rem;
+                        color: #000;
+                        font-weight: 500;
+                    }
+                    input,
+                    select {
+                        flex: 1;
+                        padding: 0 2rem;
+                        width: 100%;
+                        border: none;
+                        background: #fff;
+                        height: 4.5rem;
+                        border-radius: 20px;
+                         @extend %smooth-trans;
+                         border: 1px solid transparent;
+                         &:focus{
+                             outline: none;
+                             border: 1px solid var(--primary-color);
+                         }
+                    }
+                    select {
+                        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' fill='%23454856' class='bi bi-caret-down-fill' viewBox='0 0 16 16'%3E%3Cpath d='M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z'/%3E%3C/svg%3E");
+                        -webkit-appearance: none;
+                        -moz-appearance: none;
+                        background-position: right 1.45em top 50%;
+                        background-repeat: no-repeat;
+
+                    }
+                }
+                .form-group-50{
+                    display:flex;
+                    justify-content:space-between;
+                    align-items:center;
+                    flex-wrap: wrap;
+                    .form-group{
+                        width: 48%;
+                        @media(max-width:991px){
+                        width: 100%;
+                        }
+                    }
+                }
+
+                button{
+                    font-size: 16px;
+                    width: 20.5rem;
+                    height: 4.5rem;
+                    line-height: 4.4rem;
+                    border-radius: 20px;
+                    display: block;
+                    text-align: center;
+                    color: #fff;
+                    background: var(--primary-color);
+                    margin-left: auto;
+                    margin-top: 2rem;
+                 
+                     @extend %smooth-trans;
+                     &:hover{
+                         background: var(--primary-hover);
+                     }
+                }
+            }
         }
     }
 }
